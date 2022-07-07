@@ -289,7 +289,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Max 10 ghost.
+                  Max mint 10 ghost.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
