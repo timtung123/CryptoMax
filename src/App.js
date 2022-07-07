@@ -100,7 +100,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
-  const [mintamount, setMintamount] = useState(1);
+  const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -357,14 +357,13 @@ function App() {
                       >
                       </s.TextDescription>
                       <s.SpacerMedium />
-                      <StyledRoundButton
+                      <StyledRoundButton>
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
                           incrementMintAmount();
                         }}
-                      >
-                        {mintAmount}
+                      {mintAmount}
                       </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
