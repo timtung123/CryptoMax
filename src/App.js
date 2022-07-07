@@ -131,7 +131,7 @@ function App() {
     setClaimingNft(true);
     console.log(blockchain)
     blockchain.smartContract.methods
-      .whiteListMintghosts(blockchain.account, mintAmount)
+      .Mintghosts(blockchain.account, mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
