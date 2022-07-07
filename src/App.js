@@ -100,7 +100,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
-  const [mintghost, setmintghost] = useState(1);
+  const [mintghosts, setmintghosts] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -123,14 +123,14 @@ function App() {
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintghost);
-    let totalGasLimit = String(gasLimit * mintghost);
+    let totalCostWei = String(cost * mintghosts);
+    let totalGasLimit = String(gasLimit * mintghosts);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintghost)
+      .mint(blockchain.account, mintghosts)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -152,20 +152,20 @@ function App() {
       });
   };
 
-  const decrementmintghost = () => {
-    let newmintghost = mintghost - 1;
-    if (newmintghost < 1) {
-      newmintghost = 1;
+  const decrementmintghosts = () => {
+    let newmintghosts = mintghosts - 1;
+    if (newmintghosts < 1) {
+      newmintghosts = 1;
     }
-    setmintghost(newmintghost);
+    setmintghosts(newmintghosts);
   };
 
-  const incrementmintghost = () => {
-    let newmintghost = mintghost + 1;
-    if (newmintghost > 50) {
-      newmintghost = 50;
+  const incrementmintghosts = () => {
+    let newmintghosts = mintghosts + 1;
+    if (newmintghosts > 50) {
+      newmintghosts = 50;
     }
-    setmintghost(newmintghost);
+    setmintghosts(newmintghosts);
   };
 
   const getData = () => {
@@ -334,7 +334,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      {feedback}
+                     {feedback}
                     </s.TextDescription>
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
@@ -343,7 +343,7 @@ function App() {
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
-                          decrementmintghost();
+                          decrementmintghosts();
                         }}
                       >
                         -
@@ -355,15 +355,17 @@ function App() {
                           color: "var(--accent-text)",
                         }}
                       >
+                        {mintghosts}
                       </s.TextDescription>
                       <s.SpacerMedium />
-                      <StyledRoundButton>
+                      <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
-                          incrementmintghost();
+                          incrementmintghosts();
                         }}
-                      {mintghost}
+                      >
+                        +
                       </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
