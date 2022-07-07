@@ -162,8 +162,8 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 5) {
-      newMintAmount = 5;
+    if (newMintAmount > 50) {
+      newMintAmount = 50;
     }
     setMintAmount(newMintAmount);
   };
@@ -355,7 +355,6 @@ function App() {
                           color: "var(--accent-text)",
                         }}
                       >
-                        mintAmount
                       </s.TextDescription>
                       <s.SpacerMedium />
                       <StyledRoundButton
@@ -365,8 +364,8 @@ function App() {
                           incrementMintAmount();
                         }}
                       >
-                      +
-                    </StyledRoundButton>
+                        {mintAmount(1)}
+                      </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
