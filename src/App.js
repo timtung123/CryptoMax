@@ -355,7 +355,6 @@ function App() {
                           color: "var(--accent-text)",
                         }}
                       >
-                        {mintAmount}
                       </s.TextDescription>
                       <s.SpacerMedium />
                       <StyledRoundButton
