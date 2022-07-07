@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xc82A3C14c4011818DdEBB8646EC4bd857508641E2",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc82a3c14c4011818ddebb8646ec4bd857508641e",
+  "CONTRACT_ADDRESS": "0xf3bc14B2248Ec31C6c6A67De83D06ED7ACcC1c3e",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xf3bc14B2248Ec31C6c6A67De83D06ED7ACcC1c3e",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
     "ID": 4
   },
   "NFT_NAME": "Moon Ghost NFT",
-  "SYMBOL": "MG",
+  "SYMBOL": "Ghost",
   "MAX_SUPPLY": 1000,
   "WEI_COST": 1000000000000000,
   "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/moonghost-v4",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/ghost-huvqitbcrj",
   "SHOW_BACKGROUND": true
 }
