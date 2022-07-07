@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xc82A3C14c4011818DdEBB8646EC4bd857508641E2",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc82a3c14c4011818ddebb8646ec4bd857508641e",
+  "NETWORK": {
+    "NAME": "Etherscan",
+    "SYMBOL": "ETH",
+    "ID": 137
+  },
+  "NFT_NAME": "Moon Ghost NFT",
+  "SYMBOL": "MG",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 1000000000000000,
+  "DISPLAY_COST": 39,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/moonghost-v4",
+  "SHOW_BACKGROUND": true
+}
