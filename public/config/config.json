@@ -2,9 +2,9 @@
   "CONTRACT_ADDRESS": "0xc82A3C14c4011818DdEBB8646EC4bd857508641E2",
   "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc82a3c14c4011818ddebb8646ec4bd857508641e",
   "NETWORK": {
-    "NAME": "rinkey.etherscan",
+    "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 137
   },
   "NFT_NAME": "Moon Ghost NFT",
   "SYMBOL": "MG",
