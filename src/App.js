@@ -365,7 +365,7 @@ function App() {
                         }}
                       >
                         +
-                      (mintAmount)
+                      {mintAmount}
                     </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
