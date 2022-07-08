@@ -9,7 +9,7 @@
   "NFT_NAME": "Moon Ghost NFT",
   "SYMBOL": "Ghost",
   "MAX_SUPPLY": 5555,
-  "WEI_COST": 0000000000000000,
+  "WEI_COST": 0,
   "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
