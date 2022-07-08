@@ -10,7 +10,7 @@
   "SYMBOL": "Ghost",
   "MAX_SUPPLY": 5555,
   "WEI_COST": 1000000000000000,
-  "DISPLAY_COST": 0.001,
+  "DISPLAY_COST": 0,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/moonghost-v2",
