@@ -289,6 +289,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
+                  Firsr 2000 for free,
                   Max mint 10 ghost.
                 </s.TextDescription>
                 <s.SpacerSmall />
