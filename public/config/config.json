@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xbBae12A8Ce83d7254b5Ba27595013587e1Cd86bE",
-  "SCAN_LINK": "https://etherscan.io/address/0xbBae12A8Ce83d7254b5Ba27595013587e1Cd86bE",
+  "CONTRACT_ADDRESS": "0x054Db6652755A31F57bE68d219e4800C8849d5eC",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x054db6652755a31f57be68d219e4800c8849d5ec",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
   "NFT_NAME": "Moon Ghost NFT",
   "SYMBOL": "Ghost",
