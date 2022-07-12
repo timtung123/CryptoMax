@@ -312,7 +312,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      SOLD OUT
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
