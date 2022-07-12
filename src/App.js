@@ -152,6 +152,7 @@ function App() {
         dispatch(fetchData(blockchain.account));
       });
   };
+  
 
   const decrementmintAmount = () => {
     let newmintAmount = mintAmount - 1;
@@ -289,8 +290,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Firsr 2000 for free,
-                  Max mint 10 ghost.
+                  First 4000 freemint , maxmint 5 per wallet
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
