@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 5555,
   "WEI_COST": 0,
   "DISPLAY_COST": 0.001,
-  "GAS_LIMIT": 20000,
+  "GAS_LIMIT": 85000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/moonghost-v3",
   "SHOW_BACKGROUND": true
