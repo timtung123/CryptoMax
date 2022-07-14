@@ -1,11 +1,11 @@
 :root {
-  --primary: #ebc908;
+  --primary: #ffffff;
   --primary-text: #ff0000;
     --secondary: transparent;
-    --secondary-text: #000000;
-    --secondary2: #ffffff;
-    --secondary2-text: #c70000;
+    --secondary-text: #0011ff;
+    --secondary2: transparent;
+    --secondary2-text: #ffffff;
   --accent: transparent;
-  --accent-text: #000000;
+  --accent-text: #ffffff;
 }
 

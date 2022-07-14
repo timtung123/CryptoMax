@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x0d86916B538F00DDeA68147D9D9011E3c0857cB9",
-  "SCAN_LINK": "https://etherscan.io/address/0x0d86916B538F00DDeA68147D9D9011E3c0857cB9",
+  "CONTRACT_ADDRESS": "0x5C5e76325e70359F68675F60391DF02DAA0e837F",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x5C5e76325e70359F68675F60391DF02DAA0e837F",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
-  "NFT_NAME": "PixelApeOfficalNFT",
-  "SYMBOL": "Ape",
-  "MAX_SUPPLY": 5410,
-  "WEI_COST": 3000000000000000,
-  "DISPLAY_COST": 0.003,
+  "NFT_NAME": "ColorTokenArt",
+  "SYMBOL": "Color",
+  "MAX_SUPPLY": 2048,
+  "WEI_COST": 1000000000000000,
+  "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/pixelapewtf",
+  "MARKETPLACE_LINK": "https://opensea.io/",
   "SHOW_BACKGROUND": true
 }
