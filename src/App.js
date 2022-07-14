@@ -237,10 +237,10 @@ function App() {
             textAlign: "center",
           }}
         ><a href={CONFIG.MARKETPLACE_LINK}>
-        <Styledicon alt={"logo"} src={"/config/images/opensea.png"} />
+        <Styledicon alt={"OPENSEA"} src={"/config/images/opensea.png"} />
       </a>..
       <a href={CONFIG.SCAN_LINK}>
-      <Styledicon alt={"logo"} src={"/config/images/etherscan.png"} />
+      <Styledicon alt={"Contract"} src={"/config/images/etherscan.png"} />
     </a>
         </span>
             <s.TextTitle
