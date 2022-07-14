@@ -1,12 +1,12 @@
 {
-  "CONTRACT_ADDRESS": "0x5C5e76325e70359F68675F60391DF02DAA0e837F",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x5c5e76325e70359f68675f60391df02daa0e837f",
+  "CONTRACT_ADDRESS": "0x00",
+  "SCAN_LINK": "https://etherscan.io/address/0x00",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
-  "NFT_NAME": "PixelApeNFT",
+  "NFT_NAME": "PixelApeOfficalNFT",
   "SYMBOL": "Ape",
   "MAX_SUPPLY": 5410,
   "WEI_COST": 0,
