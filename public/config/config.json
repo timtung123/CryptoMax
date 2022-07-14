@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x00",
-  "SCAN_LINK": "https://etherscan.io/address/0x00",
+  "CONTRACT_ADDRESS": "0x0d86916B538F00DDeA68147D9D9011E3c0857cB9",
+  "SCAN_LINK": "https://etherscan.io/address/0x0d86916B538F00DDeA68147D9D9011E3c0857cB9",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
@@ -12,7 +12,7 @@
   "WEI_COST": 0,
   "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 200000,
-  "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/",
+  "MARKETPLACE": "OPENSEA",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/pixelapewtf",
   "SHOW_BACKGROUND": true
 }
