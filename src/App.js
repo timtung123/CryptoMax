@@ -238,6 +238,11 @@ function App() {
         <Styledicon alt={"OPENSEA"} src={"/config/images/opensea.png"} />
       </a>.
         </span>
+        <s.TextDescription
+                  style={{ textAlign: "center",fontSize: 20, color: "var(--accent-text2)" }}
+                >
+                  Stay tune for more excitements. DCCXVII
+                </s.TextDescription>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -283,10 +288,6 @@ function App() {
                 >
                 </s.TextTitle>
                 <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center",fontSize: 30, color: "var(--accent-text)" }}
-                >
-                </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
