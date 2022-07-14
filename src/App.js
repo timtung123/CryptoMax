@@ -74,6 +74,16 @@ export const StyledLogo = styled.img`
   transition: height 0.5s;
 `;
 
+export const Styledicon = styled.img`
+  width: 50px;
+  padding: 5x;
+  @media (min-width: 767px) {
+    width: 50px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
   border: 4px dashed var(--secondary);
@@ -164,8 +174,8 @@ function App() {
 
   const incrementmintAmount = () => {
     let newmintAmount = mintAmount + 1;
-    if (newmintAmount > 50) {
-      newmintAmount = 50;
+    if (newmintAmount > 10) {
+      newmintAmount = 10;
     }
     setmintAmount(newmintAmount);
   };
@@ -220,9 +230,19 @@ function App() {
               padding: 24,
               borderRadius: 24,
               border: "4px dashed var(--secondary)",
-              boxShadow: "0px 4px 11px 2px rgba(0,0,0,0.7)",
+              boxShadow: "0px 4px 11px 2px rgba(0,0,0,0)",
             }}
-          >
+          >            <span
+          style={{
+            textAlign: "center",
+          }}
+        ><a href={CONFIG.MARKETPLACE_LINK}>
+        <Styledicon alt={"logo"} src={"/config/images/opensea.png"} />
+      </a>..
+      <a href={CONFIG.SCAN_LINK}>
+      <Styledicon alt={"logo"} src={"/config/images/etherscan.png"} />
+    </a>
+        </span>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -243,22 +263,6 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
-            <span
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <StyledButton
-                style={{
-                  margin: "5px",
-                }}
-                onClick={(e) => {
-                  window.open(CONFIG.MARKETPLACE_LINK, "_blank");
-                }}
-              >
-                {CONFIG.MARKETPLACE}
-              </StyledButton>
-            </span>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -289,7 +293,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center",fontSize: 30, color: "var(--accent-text)" }}
                 >
-                  First 2000 for free , 2 per wallet.
+                  First 2000 for FREE MINT 2 per wallet! than down price of 0.003 ETH
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -301,7 +305,6 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      {/* Connect to the {CONFIG.NETWORK.NAME} network */}
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -311,7 +314,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      CONNECT WALLET
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
