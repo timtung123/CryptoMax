@@ -10,7 +10,7 @@
   "SYMBOL": "Ape",
   "MAX_SUPPLY": 5410,
   "WEI_COST": 0,
-  "DISPLAY_COST": 0.001,
+  "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/",
