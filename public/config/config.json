@@ -9,7 +9,7 @@
   "NFT_NAME": "The Saudi Baby Okay Bears",
   "SYMBOL": "SBOB",
   "MAX_SUPPLY": 3333,
-  "WEI_COST": 3000000000000000,
+  "WEI_COST": 0,
   "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 150000,
   "MARKETPLACE": "OPENSEA",
