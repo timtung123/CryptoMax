@@ -1,12 +1,11 @@
 :root {
-  --primary: #ffffff;
-  --primary-text: #ff0000;
+  --primary: #00ce34;
+  --primary-text: #ffffff;
     --secondary: transparent;
-    --secondary-text: #0011ff;
-    --secondary2: transparent;
+    --secondary-text: #ffffff;
+    --secondary2: #00ce34;
     --secondary2-text: #ffffff;
   --accent: transparent;
   --accent-text: #ffffff;
-  --accent-text2: rgb(255,255,255,0.1);
 }
 

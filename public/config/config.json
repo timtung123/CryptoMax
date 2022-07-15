@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x48bF58dCF8240ECb30Ec3B5B7ef6239ba809E751",
-  "SCAN_LINK": "https://etherscan.io/address/0x48bf58dcf8240ecb30ec3b5b7ef6239ba809e751",
+  "CONTRACT_ADDRESS": "0x452009C8B7fc7724EddBB1F5610d54e47a6E408c",
+  "SCAN_LINK": "https://etherscan.io/address/0x452009c8b7fc7724eddbb1f5610d54e47a6e408c",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "ColoredTokenArt",
-  "SYMBOL": "Color",
-  "MAX_SUPPLY": 5555,
-  "WEI_COST": 2000000000000000,
-  "DISPLAY_COST": 0.002,
+  "NFT_NAME": "TheSaudiBabyOkayBears",
+  "SYMBOL": "SBOB",
+  "MAX_SUPPLY": 3333,
+  "WEI_COST": 3000000000000000,
+  "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 150000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/colortokenart",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/thesaudibabyokaybears",
   "SHOW_BACKGROUND": true
 }
