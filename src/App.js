@@ -15,13 +15,12 @@ export const StyledButton = styled.button`
   background-color: var(--secondary2);
   padding: 10px;
   font-weight: bold;
-  font-size: 25px;
   color: var(--secondary2-text);
   width: 200px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0);
+  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   :active {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -36,7 +35,7 @@ export const StyledRoundButton = styled.button`
   background-color: var(--primary);
   padding: 10px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
   color: var(--primary-text);
   width: 30px;
   height: 30px;
@@ -69,7 +68,7 @@ export const ResponsiveWrapper = styled.div`
 export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 150px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -110,7 +109,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click to claim your token.`);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setmintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -214,6 +213,9 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+        <a href={CONFIG.MARKETPLACE_LINK}>
+        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        </a>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -222,7 +224,7 @@ function App() {
           <s.Container
             flex={2}
             jc={"center"}
-            ai={"center"}
+            ai={"npcenter"}
             style={{
               backgroundColor: "var(--accent)",
               padding: 24,
@@ -236,13 +238,8 @@ function App() {
           }}
         ><a href={CONFIG.MARKETPLACE_LINK}>
         <Styledicon alt={"OPENSEA"} src={"/config/images/opensea.png"} />
-      </a>.
+      </a>
         </span>
-        <s.TextDescription
-                  style={{ textAlign: "center",fontSize: 20, color: "var(--accent-text2)" }}
-                >
-                  Stay tune for more excitements. DCCXVII
-                </s.TextDescription>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -286,8 +283,15 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
+                  {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}. */}
                 </s.TextTitle>
                 <s.SpacerXSmall />
+                <s.TextDescription
+                  style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}
+                >
+                  First 1000 FREEMINT 2 per wallet than 0.003 ETH
+                </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -307,7 +311,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      CONNECT WALLET
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
