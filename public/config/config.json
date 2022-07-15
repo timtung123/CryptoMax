@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x5C5e76325e70359F68675F60391DF02DAA0e837F",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x5C5e76325e70359F68675F60391DF02DAA0e837F",
+  "CONTRACT_ADDRESS": "0x48bF58dCF8240ECb30Ec3B5B7ef6239ba809E751",
+  "SCAN_LINK": "https://etherscan.io/address/0x48bf58dcf8240ecb30ec3b5b7ef6239ba809e751",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "ColoredTokenArt",
   "SYMBOL": "Color",
@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.002,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/colortokenart",
   "SHOW_BACKGROUND": true
 }
