@@ -66,9 +66,9 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 300px;
   @media (min-width: 767px) {
-    width: 150px;
+    width: 300px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -290,7 +290,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}
                 >
-                  First 1000 FREEMINT 2 per wallet than 0.003 ETH
+                  0.01 ETH per , MAX 10 per TX
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
