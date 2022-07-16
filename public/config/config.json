@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x452009C8B7fc7724EddBB1F5610d54e47a6E408c",
-  "SCAN_LINK": "https://etherscan.io/address/0x452009c8b7fc7724eddbb1f5610d54e47a6e408c",
+  "CONTRACT_ADDRESS": "0x7e7da8f18f9280d5455d1d7b61709d3343cc062f",
+  "SCAN_LINK": "https://etherscan.io/address/0x7e7da8f18f9280d5455d1d7b61709d3343cc062f",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "The Saudi Baby Okay Bears",
-  "SYMBOL": "SBOB",
-  "MAX_SUPPLY": 3333,
-  "WEI_COST": 0,
-  "DISPLAY_COST": 0.003,
+  "NFT_NAME": "The Taiwanese NFT",
+  "SYMBOL": "TWNS",
+  "MAX_SUPPLY": 1999,
+  "WEI_COST": 1000000000000000,
+  "DISPLAY_COST": 0.01,
   "GAS_LIMIT": 150000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/thesaudibabyokaybears",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/the-taiwanese-nft",
   "SHOW_BACKGROUND": true
 }
