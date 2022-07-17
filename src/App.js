@@ -111,6 +111,7 @@ function App() {
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setmintAmount] = useState(1);
+  const [freemint, setFreemint] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -130,11 +131,22 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  const getMintedFree = async () => {
+    if (blockchain.smartContract !== null){
+    let res = await blockchain.smartContract.methods
+    .freeMinted(blockchain.account)
+    .call();
+    console.log(res);
+    setFreemint(res);}
+  };
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit);
+    if (freemint == false) {
+      totalCostWei = String(cost * mintAmount - cost);
+    }
+    let totalGasLimit = String(gasLimit + mintAmount * 2800);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
@@ -290,7 +302,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}
                 >
-                  0.01 ETH per , MAX 10 per TX
+                 Get 1 freemint than 0.002 ETH per , MAX 10 per TX
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
