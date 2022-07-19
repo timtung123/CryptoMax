@@ -131,6 +131,7 @@ function App() {
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
+    TWITTER_LINK: "",
     NETWORK: {
       NAME: "",
       SYMBOL: "",
