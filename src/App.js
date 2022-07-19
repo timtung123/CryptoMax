@@ -63,6 +63,7 @@ export const ResponsiveWrapper = styled.div`
   width: 100%;
   @media (min-width: 767px) {
     flex-direction: row;
+    width: 75%;
   }
 `;
 
