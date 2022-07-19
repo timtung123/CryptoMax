@@ -1,18 +1,19 @@
 {
   "CONTRACT_ADDRESS": "0xd5378cb5d6dc9ade15039cb4c1c607bbb12db8bc",
-  "SCAN_LINK": "https://etherscan.io/address/0xd5378cb5d6dc9ade15039cb4c1c607bbb12db8bc",
+  "SCAN_LINK": "https://etherscan.io/address/0xd5378cb5d6dc9ade15039cb4c1c607bbb12db8bc ",
+  "TWITTER": "https://twitter.com/CryptoMax_NFT",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "The Taiwanese NFT",
-  "SYMBOL": "TWNS",
-  "MAX_SUPPLY": 3999,
-  "WEI_COST": 2000000000000000,
-  "DISPLAY_COST": 0.002,
+  "NFT_NAME": "CryptoMax NFT",
+  "SYMBOL": "CMAX",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 2900000000000000,
+  "DISPLAY_COST": 0.0029,
   "GAS_LIMIT": 130000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/taiwanesenft",
+  "MARKETPLACE_LINK": "https://opensea.io/collection",
   "SHOW_BACKGROUND": true
 }
