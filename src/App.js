@@ -10,13 +10,14 @@ const truncate = (input, len) =>
 
 export const StyledButton = styled.button`
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 20px;
   border: none;
   background-color: var(--secondary2);
   padding: 10px;
+  font-size: 30px;
   font-weight: bold;
   color: var(--secondary2-text);
-  width: 200px;
+  width: 300px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -66,19 +67,34 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 300px;
+  width: 200px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 500px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
+ 
+`;
+
+export const StyledPFP = styled.img`
+  width: 300px;
+  @media (min-width: 767px) {
+    width: 500px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+ 
 `;
 
 export const Styledicon = styled.img`
+  display: flex;
+  flex: 1;  
   width: 50px;
   padding: 5x;
+  flex-direction: column;
   @media (min-width: 767px) {
     width: 50px;
+    flex-direction: row;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -225,16 +241,32 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+        <s.Container flex={1} jc={"space-around"} ai={"center"} fd={"row"}  >
         <a href={CONFIG.MARKETPLACE_LINK}>
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         </a>
+        <a href={CONFIG.MARKETPLACE_LINK}>
+        <Styledicon alt={"OPENSEA"} src={"/config/images/opensea.png"} />
+      </a> 
+      <a href={CONFIG.TWITTER_LINK}>
+        <Styledicon alt={"TWITTER"} src={"/config/images/twitter.png"} />
+      </a> 
+      </s.Container>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-          </s.Container>
+        <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
           <s.SpacerLarge />
+          <s.Container flex={1} jc={"center"} ai={"center"} >
+        <StyledPFP style={{
+              backgroundColor: "var(--accent)",
+              padding: 2,
+              borderRadius: 24,
+              border: "2px dashed var(--secondary)",
+            }}
+            alt={"PFP"} src={"/config/images/pfp.gif"} />
+          </s.Container>
+          <s.SpacerMedium />
           <s.Container
-            flex={2}
+            flex={1}
             jc={"center"}
             ai={"npcenter"}
             style={{
@@ -242,15 +274,14 @@ function App() {
               padding: 24,
               borderRadius: 24,
               border: "4px dashed var(--secondary)",
-              boxShadow: "0px 4px 11px 2px rgba(0,0,0,0)",
+              boxShadow: "0px 4px 11px 2px rgba(0,0,0,0.3)",
             }}
-          >            <span
+          >            
+          <span
           style={{
             textAlign: "center",
           }}
-        ><a href={CONFIG.MARKETPLACE_LINK}>
-        <Styledicon alt={"OPENSEA"} src={"/config/images/opensea.png"} />
-      </a>
+        >
         </span>
             <s.TextTitle
               style={{
@@ -278,31 +309,26 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  The sale has ended.
+                 Sold Out.
                 </s.TextTitle>
+                <s.SpacerSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  You can still find {CONFIG.NFT_NAME} on
+                  You can still find {CONFIG.NFT_NAME} on Opensea.
                 </s.TextDescription>
                 <s.SpacerSmall />
-                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
-                </StyledLink>
               </>
             ) : (
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}. */}
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}
                 >
-                 Get 1 freemint than 0.002 ETH per , MAX 10 per TX
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -398,11 +424,6 @@ function App() {
                 )}
               </>
             )}
-            <s.SpacerMedium />
-          </s.Container>
-          <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
@@ -423,6 +444,58 @@ function App() {
           >
           </s.TextDescription>
         </s.Container>
+        <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
+          <s.Container
+            flex={1}
+            jc={"center"}
+            ai={"npcenter"}
+            style={{
+              backgroundColor: "var(--accent)",
+              padding: 22,
+              borderRadius: 24,
+              border: "4px dashed var(--secondary)",
+              boxShadow: "0px 4px 11px 2px rgba(0,0,0,0.2)",
+            }}
+            > 
+            <s.TextDescription style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}>
+            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.0029 ETH per one.
+                 Max mint 5 per tx.
+            </s.TextDescription>
+            <s.SpacerMedium />
+          </s.Container>
+          <s.SpacerLarge />
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+          <a href={CONFIG.MARKETPLACE_LINK}>
+        <StyledPFP alt={"PFP"} src={"/config/images/4X4.png"} />
+        </a>
+          </s.Container>  
+        </ResponsiveWrapper>
+        <s.SpacerMedium />
+        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+          </s.TextDescription>
+        </s.Container>
+        <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+        Get Ready for the Takeover… No Discord, No Roadmap, Good Vibes.
+        </s.TextDescription>
       </s.Container>
     </s.Screen>
   );
