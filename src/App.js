@@ -460,7 +460,7 @@ function App() {
             }}
             > 
             <s.TextDescription style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}>
-            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.0029 ETH per one.
+            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.002 ETH per one.
                  Max mint 5 per tx.
             </s.TextDescription>
             <s.SpacerMedium />
