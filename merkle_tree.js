@@ -3,7 +3,7 @@ const keccak256 = require('keccak256');
 
 let whitelistAddresses = [
     '0x3532Bf9FF4900f32DA9037b2cd0188A0419BB7b1',
-    '0xd0e72369B380d86b57D5a97befc053976556dfD1',
+    '0x119F8903bE1Fc789cDc7827317143f1c071f22F5',
     '0x1cD97FFcF7aEFbCe3b59e5816d778c0117f2d763',
     '0x0a290c8cE7C35c40F4F94070a9Ed592fC85c62B9',
     '0x43Be076d3Cd709a38D2f83Cd032297a194196517',
@@ -23,4 +23,3 @@ let tree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
 console.log('Whitelist Merkle Tree\n: ', tree.toString());
 const root = tree.getRoot();
 console.log('Root hash is: ', root.toString('hex'));
-
