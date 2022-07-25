@@ -150,7 +150,6 @@ function App() {
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`MAX can get 5 freemint NFT.`);
   const [mintAmount, setmintAmount] = useState(1);
-  const [freemintAmount, setfreemintAmount] = useState(5);
   const [freemint, setFreemint] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -183,11 +182,11 @@ function App() {
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * freemintAmount);
+    let totalCostWei = String(cost * mintAmount);
     if (freemint == false) {
-      totalCostWei = String(cost * freemintAmount - cost);
+      totalCostWei = String(cost * mintAmount - 5 * cost);
     }
-    let totalGasLimit = String(gasLimit + freemintAmount 5 * 2800);
+    let totalGasLimit = String(gasLimit + mintAmount * 2800);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
