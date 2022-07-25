@@ -5,6 +5,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
+
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
@@ -17,7 +18,28 @@ export const StyledButton = styled.button`
   font-size: 30px;
   font-weight: bold;
   color: var(--secondary2-text);
-  width: 300px;
+  width: 250px;
+  cursor: pointer;
+  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  :active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+`;
+
+export const StyledWLButton = styled.button`
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--secondary3);
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--secondary3-text);
+  width: 250px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -126,13 +148,14 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click mint to get your Max.`);
+  const [feedback, setFeedback] = useState(`MAX can get 5 freemint NFT.`);
   const [mintAmount, setmintAmount] = useState(1);
+  const [freemintAmount, setfreemintAmount] = useState(1);
   const [freemint, setFreemint] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
-    TWITTER_LINK: "",
+    TWITTER_LINK:"",
     NETWORK: {
       NAME: "",
       SYMBOL: "",
@@ -160,18 +183,17 @@ function App() {
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
+    let totalCostWei = String(cost * freemintAmount);
     if (freemint == false) {
-      totalCostWei = String(cost * freemintAmount - 5 * cost);
+      totalCostWei = String(cost * freemintAmount - cost);
     }
-    let totalGasLimit = String(gasLimit + mintAmount * 2800);
+    let totalGasLimit = String(gasLimit + freemintAmount 5 * 2800);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
-    setClaimingNft(true);
     console.log(blockchain)
     blockchain.smartContract.methods
-      .mint(mintAmount)
+      .whitelistMint(blockchain.account,freemintAmount,proof)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -192,7 +214,6 @@ function App() {
         dispatch(fetchData(blockchain.account));
       });
   };
-  
 
   const decrementmintAmount = () => {
     let newmintAmount = mintAmount - 1;
@@ -204,8 +225,8 @@ function App() {
 
   const incrementmintAmount = () => {
     let newmintAmount = mintAmount + 1;
-    if (newmintAmount > 20) {
-      newmintAmount = 20;
+    if (newmintAmount > 10) {
+      newmintAmount = 10;
     }
     setmintAmount(newmintAmount);
   };
@@ -415,7 +436,7 @@ function App() {
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
-                          claimNFTs();
+                          claimPublicNFTs();
                           getData();
                         }}
                       >
@@ -460,8 +481,8 @@ function App() {
             }}
             > 
             <s.TextDescription style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}>
-            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 5 freemint than 0.002 ETH per one.
-                 Max mint 20 per tx.
+            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.0029 ETH per one.
+                 Max mint 5 per tx.
             </s.TextDescription>
             <s.SpacerMedium />
           </s.Container>
