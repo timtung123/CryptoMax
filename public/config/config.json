@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x9751232d2f0cc68ce7c14a6e37889df942897093",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x9751232d2f0cc68ce7c14a6e37889df942897093 ",
+  "CONTRACT_ADDRESS": "0x55F64B49207e87ea8335D9303978A31eAB546Aac",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x55F64B49207e87ea8335D9303978A31eAB546Aac ",
   "TWITTER_LINK": "https://twitter.com/CryptoMax_NFT",
   "NETWORK": {
     "NAME": "Etherscan",
@@ -10,8 +10,8 @@
   "NFT_NAME": "CryptoMax NFT",
   "SYMBOL": "CMAX",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 2000000000000000,
-  "DISPLAY_COST": 0.002,
+  "WEI_COST": 3000000000000000,
+  "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 130000,
   "MARKETPLACE": "OPENSEA",
   "MARKETPLACE_LINK": "https://opensea.io/collection/#",
