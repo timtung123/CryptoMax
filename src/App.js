@@ -149,7 +149,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`MAX can get 5 freemint NFT.`);
-  const [mintAmount, setmintAmount] = useState(1);
+  const [mintAmount, setmintAmount] = useState(5);
   const [freemint, setFreemint] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
