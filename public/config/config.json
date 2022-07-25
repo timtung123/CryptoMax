@@ -1,11 +1,11 @@
 {
-  "CONTRACT_ADDRESS": "0x55F64B49207e87ea8335D9303978A31eAB546Aac",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x55F64B49207e87ea8335D9303978A31eAB546Aac ",
+  "CONTRACT_ADDRESS": "0x46A026ba6537edcA574990666D69cc3B3B85F456",
+  "SCAN_LINK": "https://etherscan.io/address/0x46a026ba6537edca574990666d69cc3b3b85f456",
   "TWITTER_LINK": "https://twitter.com/CryptoMax_NFT",
   "NETWORK": {
     "NAME": "Etherscan",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "CryptoMax NFT",
   "SYMBOL": "CMAX",
