@@ -193,7 +193,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     console.log(blockchain)
     blockchain.smartContract.methods
-      .whitelistMint(freemintAmount)
+      .Mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -481,7 +481,7 @@ function App() {
             }}
             > 
             <s.TextDescription style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}>
-            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.0029 ETH per one.
+            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 5 freemint than 0.002 ETH per one.
                  Max mint 5 per tx.
             </s.TextDescription>
             <s.SpacerMedium />
