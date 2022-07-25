@@ -1,5 +1,5 @@
 {
-  "CONTRACT_ADDRESS": "0x46A026ba6537edcA574990666D69cc3B3B85F456",
+  "CONTRACT_ADDRESS": "0x46a026ba6537edca574990666d69cc3b3b85f456",
   "SCAN_LINK": "https://etherscan.io/address/0x46a026ba6537edca574990666d69cc3b3b85f456",
   "TWITTER_LINK": "https://twitter.com/CryptoMax_NFT",
   "NETWORK": {
@@ -14,6 +14,6 @@
   "DISPLAY_COST": 0.002,
   "GAS_LIMIT": 130000,
   "MARKETPLACE": "OPENSEA",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/#",
+  "MARKETPLACE_LINK": "https://opensea.io/collection",
   "SHOW_BACKGROUND": true
 }
