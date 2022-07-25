@@ -193,7 +193,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     console.log(blockchain)
     blockchain.smartContract.methods
-      .whitelistMint(blockchain.account,freemintAmount,proof)
+      .whitelistMint(freemintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
