@@ -126,7 +126,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click mint to get your Max.`);
   const [mintAmount, setmintAmount] = useState(1);
   const [freemint, setFreemint] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
@@ -460,8 +460,8 @@ function App() {
             }}
             > 
             <s.TextDescription style={{ textAlign: "center",fontSize: 25, color: "var(--accent-text)" }}>
-            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 1 freemint than 0.002 ETH per one.
-                 Max mint 5 per tx.
+            CryptoMax are about to take over the world. 10,000 Maxz are coming to a web3 you love. Get 5 freemint than 0.003 ETH per one.
+                 Max mint 20 per tx.
             </s.TextDescription>
             <s.SpacerMedium />
           </s.Container>
