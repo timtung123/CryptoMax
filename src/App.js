@@ -161,9 +161,6 @@ function App() {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    if (freemint == false) {
-      totalCostWei = String(cost * mintAmount - 5 * cost);
-    }
     let totalGasLimit = String(gasLimit + mintAmount * 2800);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
