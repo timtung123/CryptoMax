@@ -436,7 +436,7 @@ function App() {
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
-                          claimPublicNFTs();
+                          claimNFTs();
                           getData();
                         }}
                       >
