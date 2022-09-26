@@ -1,5 +1,5 @@
 # CryptoMax
-# ![](/public/config/images/BG.png)CryptoMax NFT
+# ![](/public/config/images/4X4.png)CryptoMax NFT
 
 ## 📜Info
 
