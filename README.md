@@ -3,7 +3,7 @@
 
 ## 📜Info
 
-### ⭐Website Link : [Here](https://cryptomaxnft.netlify.app/)
+### ⭐Website Link : [Here](https://crypto-max.xyz/)
 
 - #### 👤Author : [Tim](https://linkby.tw/timtung.eth)
 - #### ⛵Opensea : [Here](https://opensea.io/collection/cryptomaxweb3)
